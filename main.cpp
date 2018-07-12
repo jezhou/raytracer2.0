@@ -1,4 +1,5 @@
 #include <iostream>
+#include <glm/vec3.hpp>
 
 int main() {
   int nx = 200;
@@ -11,7 +12,8 @@ int main() {
       float r = float(x) / float(nx);
       float g = float(y) / float(ny);
       float b = 0.2;
-      std::cout << int(r * 255.0) << " " << int(g * 255.0) << " " << int(b * 255.0) << "\n";
+      glm::vec3 color(r, g, b);
+      std::cout << int(color.r * 255.0) << " " << int(color.g * 255.0) << " " << int(color.b * 255.0) << "\n";
     }
   }
 };
