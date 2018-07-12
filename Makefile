@@ -1,5 +1,5 @@
 CC = g++
-INCLUDE_LIB = -I./glm-0.9.9.0
+INCLUDE_LIB = -I./include
 
 all: raytracer
 
