@@ -2,3 +2,4 @@
 raytracer
 *.ppm
 .DS_Store
+*.o
