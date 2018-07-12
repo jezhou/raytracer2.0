@@ -1,0 +1,4 @@
+*.out
+raytracer
+*.ppm
+.DS_Store
