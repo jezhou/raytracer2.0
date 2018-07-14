@@ -1,6 +1,8 @@
 #include <iostream>
 #include <glm/vec3.hpp>
 
+#include "ray.h"
+
 int main() {
   int nx = 200;
   int ny = 100;

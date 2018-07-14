@@ -8,7 +8,7 @@ new: clean all
 raytracer: main.o
 	$(CC) -o raytracer *.o $(INCLUDE_LIB)
 
-main.o:
+main.o: 
 	$(CC) $(INCLUDE_LIB) -c main.cpp
 
 clean:
