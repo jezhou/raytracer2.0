@@ -3,6 +3,8 @@ INCLUDE_LIB = -I./include
 
 all: raytracer
 
+new: clean all
+
 raytracer: main.o
 	$(CC) -o raytracer *.o $(INCLUDE_LIB)
 
