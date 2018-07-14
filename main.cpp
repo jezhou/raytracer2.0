@@ -9,6 +9,7 @@ int main() {
 
   std::cout << "P3\n" << nx <<  " " << ny << "\n255\n";
 
+  // Down to up, Right to left
   for(int y = ny - 1; y >= 0; y--) {
     for(int x = 0; x < nx; x++) {
       float r = float(x) / float(nx);
