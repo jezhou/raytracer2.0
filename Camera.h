@@ -14,7 +14,7 @@ class Camera {
   Ray shoot(float xCoordinate, float yCoordinate); 
   
   private:
-  float focalDistance;
+  float focalDistance; // essentially how far we are from the pixel plane
   glm::vec3 origin;
 };
 

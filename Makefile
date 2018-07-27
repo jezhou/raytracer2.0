@@ -8,11 +8,14 @@ new: clean all
 raytracer: main.o
 	$(CC) -o raytracer *.o $(INCLUDE_LIB)
 
-main.o: camera.o
+main.o: camera.o sphere.o
 	$(CC) $(INCLUDE_LIB) -c main.cpp
 
 camera.o:
 	$(CC) $(INCLUDE_LIB) -c Camera.cpp
+
+sphere.o:
+	$(CC) $(INCLUDE_LIB) -c Sphere.cpp
 
 clean:
 	rm -f *.o raytracer
