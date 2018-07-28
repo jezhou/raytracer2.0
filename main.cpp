@@ -15,8 +15,8 @@ glm::vec3 color(Sphere& sphere, Ray& ray) {
 }
 
 int main() {
-  int nx = 200;
-  int ny = 100;
+  int nx = 600;
+  int ny = 300;
 
   glm::vec3 cameraOrigin(0, 0, 0);
   glm::vec3 sphereOrigin(0, 0, -1.0);
