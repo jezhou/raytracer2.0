@@ -5,17 +5,18 @@
 #define PIXEL_OFFSET 0.5 
 
 #include <glm/vec3.hpp>
-#include "Ray.h"
+#include "WorldObject.h"
 
-class Sphere {
+class Sphere : public WorldObject {
   public:
   Sphere() {}
   Sphere(glm::vec3& center, float radius) { this->center = center; this->radius = radius; };
-  bool intersection(Ray& ray);
+  surface_hit intersection(Ray& ray);
   
   private:
   glm::vec3 center;
   float radius;
+  void record_hit(float distance_to_surface, Ray& ray, surface_hit& hit); // Note: This mutates the hit object.
 };
 
 #endif

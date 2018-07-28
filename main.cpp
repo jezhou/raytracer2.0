@@ -7,8 +7,9 @@
 #include "ImagePlane.h"
 
 glm::vec3 color(Sphere& sphere, Ray& ray) {
-  if(sphere.intersection(ray)) {
-    return glm::vec3(1, 0, 0);
+  surface_hit hit = sphere.intersection(ray); 
+  if(hit.did_hit) {
+    return 0.5f * (hit.normal + glm::vec3(1, 1, 1));
   };
 
   return glm::vec3(0, 0, 0);
