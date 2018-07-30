@@ -1,5 +1,5 @@
-#ifndef WORLDOBJECTH
-#define WORLDOBJECTH
+#ifndef SCENEOBJECTH
+#define SCENEOBJECTH
 
 #include <glm/vec3.hpp>
 #include "Ray.h"
@@ -10,7 +10,7 @@ struct surface_hit {
   glm::vec3 normal;  // The normal from where the surface was hit, normalized
 };
 
-class WorldObject {
+class SceneObject {
   public:
   virtual surface_hit intersection(Ray& ray) { 
     surface_hit hit;
